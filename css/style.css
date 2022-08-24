@@ -12,7 +12,7 @@ h1 {
 .milan {
     text-align: center;
     max-width: 600px;
-    background-color: red;
+    background-image: linear-gradient(to left, red, rgb(74, 74, 74));
     margin: 13px auto;
     border: solid black 4px;
     border-radius: 6px;
@@ -29,11 +29,24 @@ h1 {
     padding: 6px;
 }
 
+.milan:hover {
+    background-color: yellow;
+    transition: .4s;
+
+}
+
+h1:hover {
+    color: darkorchid;
+    transform: skew(-22deg);
+    transition: 0.4s;
+}
+
 /* Mobile Last */
 @media (max-width: 550px) {
     .milan {
-        background-color: rgb(24, 212, 84);
+        background-image: linear-gradient(to left, green, red);
         font-style: italic;
+        text-decoration: underline;
 
     }
 }
